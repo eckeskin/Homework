@@ -90,6 +90,7 @@ public class QuestionsAndAnswers {
 
         assertEquals(response.path("pageable.pageSize"),(Integer) 20);
         assertEquals(response.path("totalPages"),(Integer) 1);
+        assertFalse(response.path("sort.sorted"));
 
     }
 
@@ -119,6 +120,7 @@ public class QuestionsAndAnswers {
 
         assertEquals(response.path("pageable.pageSize"),(Integer) 20);
         assertEquals(response.path("totalPages"),(Integer) 1);
+        assertFalse(response.path("sort.sorted"));
 
     }
 }
